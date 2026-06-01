@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title> marlon siegmund </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,9 +70,13 @@
     .Impress a:hover {
       color: var(--grau);
     }
+    footer {
+      display: none;
+    }
 @media (max-width: 768px) {
   .nav-name {
-      font-size: 36px
+      font-size: 36px;
+      margin-top: 18px;
     }
     .Header {
       flex-direction: column;
@@ -81,7 +85,9 @@
       align-items: center;
     }
     .Header ul {
-      gap: 18px
+      gap: 18px;
+      margin-top: 10px;
+      display: none;
     }
     .Header a {
       font-size: 24px;
@@ -96,7 +102,40 @@
       margin-top: 36px;
       font-size: 18px;
     }
-
+    main {
+      margin-top: 100px;
+    }
+     body {
+    padding-bottom: 80px; 
+  }
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      list-style: none;
+      font-family: Elms Sans, Ital;
+      position: fixed;
+      bottom: 0; 
+      left: 0;
+      right: 0;
+      background: #ffffff
+    }
+     footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;               
+  }
+  footer a {
+    text-decoration: none;
+    color: var(--schwarz);
+    font-size: 24px;
+  }
+ footer a:hover {
+      color: var(--grau);
+    }
 }
     </style> 
     </head>
@@ -113,5 +152,11 @@
   </main>
   <p class="Beschreibung">SCHLUSSLICHT, 2024-2026</p>
   <p class="Impress"><a href="impress.html">IMPRESS</a></p>
+  <footer>
+    <ul>
+      <li><a href="archive.html">ARCHIVE</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+  </footer> 
 </body>
 </html>
