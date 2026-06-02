@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title> marlon siegmund </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +11,10 @@
       --schwarz: #0f0f0f;
       --weiss: #f8f7f4;
       --grau: #999;
+    }
+    .nav-name {
+      text-align: start;
+      align-self: left
     }
     .Header {
       background: #ffffff;
@@ -51,6 +56,43 @@
   span {
     font-family: Elms Sans, Ital;
   }
+  @media (max-width: 768px) {
+    .nav-name {
+      margin-top: 10px
+    }  
+    .Header {
+      flex-direction: column;
+      padding: 8px 28px;
+      gap: 8px;
+      align-items: center;
+    }
+    .Header ul {
+      gap: 18px;
+      margin-top: 10px;
+      display: none;
+    }
+    .Header a {
+      font-size: 36px;
+      margin-top: 18px;
+    }
+    main {
+      margin-top: 60px;
+    }
+    .Beschreibung {
+      font-size: 18px;
+    }
+    .Impress {
+      margin-top: 36px;
+      font-size: 18px;
+      margin-top: 80px
+    }
+    main {
+      margin-top: 100px;
+    }
+     body {
+    padding-bottom: 80px; 
+  }
+}
 </style>
 </head> 
 <body>
