@@ -77,7 +77,7 @@
   }
   .galerie p{
     font-family: Elms Sans, Ital;
-    margin-top: -16px;
+    margin-top: 20px;
     font-size: 24px;
     text-align: center;
   }
@@ -87,7 +87,13 @@
   footer {
     display: none;
   }
+  .mobile {
+    display: none;
+  }
   @media (max-width: 768px) {
+  .galerie {
+    grid-template-columns: 1fr;
+  }
   .nav-name {
       margin-top: 18px;
       margin-bottom:18px
@@ -157,9 +163,15 @@
   }
   .galerie p{
     font-family: Elms Sans, Ital;
-    margin-top: -16px;
     font-size: 18px;
     text-align: center;
+    margin-top: 18px
+  }
+  .pc {
+    display:none;
+  }
+  .mobile {
+    display: block;
   }
   }
   }
@@ -174,7 +186,17 @@
       <li><a href="about.html" class="about">ABOUT</a></li>
     </ul>
   </nav> 
-  <main class="galerie">
+  <main class="galerie mobile">
+    <img src="Oskar-Hoffmann-Strasse_komp.jpg">
+    <p><a href="fotografie.html">FOTOGRAFIE</a></p>
+    <img src="Oskar-Hoffmann-Strasse_komp.jpg">
+    <p><a href="plastik.html">PLASTIK</a></p>
+    <img src="Oskar-Hoffmann-Strasse_komp.jpg">
+    <p><a href="malerei.html">MALEREI</a></p>
+    <img src="Oskar-Hoffmann-Strasse_komp.jpg">
+    <p><a href="film.html">FILM</a></p>
+  </main>
+   <main class="galerie pc">
     <img src="Oskar-Hoffmann-Strasse_komp.jpg">
     <img src="Oskar-Hoffmann-Strasse_komp.jpg">
     <p><a href="fotografie.html">FOTOGRAFIE</a></p>
