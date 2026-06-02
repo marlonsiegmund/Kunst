@@ -33,7 +33,7 @@
       color: var(--schwarz);
       font-size: 26px;
     }
-    .Header a:hover {
+    .about:hover {
       color: var(--grau);
     }
         .nav-name a {
@@ -42,21 +42,21 @@
     .nav-name a:hover {
       color: var(--grau);
     }
-  .Impress {
-    list-style: none;
-    font-family: Elms Sans, Ital;
-    font-size: 18px;
-    margin-top: 100px;
-  }
-  .Impress a {
-    color: var(--schwarz);
-    text-decoration: none;
-  }
+    .Impress {
+      margin-top: 60px;
+      font-size: 24px;
+      font-family: Elms Sans, Ital;
+      padding: 14px
+    }
+    .Impress a {
+      text-decoration: none;
+      color: var(--schwarz);
+    }
+    .Impress a:hover {
+      color: var(--grau);
+    }
   span {
     font-family: Elms Sans, Ital;
-  }
-  .Header .kein-hover:hover {
-    color: #0f0f0f;
   }
   .galerie {
     display: grid;
@@ -70,18 +70,122 @@
     object-fit: cover; 
     display: block;
   }
+  .galerie a {
+    color: var(--schwarz);
+    text-decoration: none;
+  }
+  .galerie p{
+    font-family: Elms Sans, Ital;
+    margin-top: -16px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .galerie a:hover {
+      color: var(--grau);
+    }
+  footer {
+    display: none;
+  }
+  @media (max-width: 768px) {
+  .nav-name {
+      margin-top: 18px;
+      margin-bottom:18px
+    }
+  .nav-name a {
+    font-size: 36px !important;
+}
+    .Header {
+      flex-direction: column;
+      padding: 8px 28px;
+      gap: 8px;
+      align-items: center;
+    }
+    .Header ul {
+      gap: 18px;
+      margin-top: 10px;
+      display: none;
+    }
+    .Header a {
+      font-size: 24px;
+    }
+    main {
+      margin-top: 60px;
+    }
+    .Beschreibung {
+      font-size: 18px;
+    }
+    .Impress {
+      margin-top: 36px;
+      font-size: 18px;
+    }
+    main {
+      margin-top: 100px;
+    }
+     body {
+    padding-bottom: 60px; 
+  }
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      list-style: none;
+      font-family: Elms Sans, Ital;
+      position: fixed;
+      bottom: 0; 
+      left: 0;
+      right: 0;
+      background: #ffffff
+    }
+     footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;    
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;       
+  }
+  footer a {
+    text-decoration: none;
+    color: var(--schwarz);
+    font-size: 24px;
+  }
+  .galerie p{
+    font-family: Elms Sans, Ital;
+    margin-top: -16px;
+    font-size: 18px;
+    text-align: center;
+  }
 </style>
+
 </head> 
 <body>
  <nav class="Header">
     <span class="nav-name"><a href="index.html">marlon siegmund</a></span>
     <ul>
-      <li><a href="archive.html" class="kein-hover">ARCHIVE</a></li>
-      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="archive.html">ARCHIVE</a></li>
+      <li><a href="about.html" class="about">ABOUT</a></li>
     </ul>
   </nav> 
-  <div class="galerie">
+  <main class="galerie">
     <img src="Oskar-Hoffmann-Strasse_komp.jpg">
-  </div>
+    <img src="Oskar-Hoffmann-Strasse_komp.jpg">
+    <p><a href="fotografie.html">FOTOGRAFIE</a></p>
+    <p><a href="plastik.html">PLASTIK</a></p>
+    <img src="Oskar-Hoffmann-Strasse_komp.jpg">
+    <img src="Oskar-Hoffmann-Strasse_komp.jpg">
+    <p><a href="malerei.html">MALEREI</a></p>
+    <p><a href="film.html">FILM</a></p>
+  </main>
    <p class="Impress"><a href="impress.html">IMPRESS</a></p>
+    <footer>
+    <ul>
+      <li><a href="archive.html">ARCHIVE</a></li>
+      <li><a href="about.html" class="about">ABOUT</a></li>
+    </ul>
+  </footer>
 </body>
